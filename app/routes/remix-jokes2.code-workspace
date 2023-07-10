@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"name": "remix-jokes-app",
+			"path": "../../remix-jokes-app"
+		}
+	],
+	"settings": {}
+}
