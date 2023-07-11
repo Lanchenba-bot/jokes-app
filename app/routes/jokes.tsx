@@ -3,9 +3,11 @@ import type { LinksFunction } from "@remix-run/node"
 import { Link, Outlet, useLoaderData, useNavigate } from "@remix-run/react"
 
 import stylesUrl from "~/styles/jokes.css"
+import stylesheet from "~/styles/tailwind.css"
 import { listLoader } from "~/controllers/jokes"
 
 export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: stylesheet },
   { rel: "stylesheet", href: stylesUrl },
 ]
 
@@ -56,7 +58,7 @@ export default function JokesRoute() {
                 ({ id, jokesterId, name }) =>
                   userid === jokesterId && (
                     <li key={id}>
-                      <button onClick={() => navigate(id)}>{name}</button>
+                      <Link to={id}>{name}</Link>
                     </li>
                   )
               )}

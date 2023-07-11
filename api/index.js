@@ -24,9 +24,9 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   mod
 )), __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: !0 }), mod);
 
-// app/routes/jokes.$id.comments.tsx
-var require_jokes_id_comments = __commonJS({
-  "app/routes/jokes.$id.comments.tsx"() {
+// app/routes/jokes/$id.comments.tsx
+var require_id_comments = __commonJS({
+  "app/routes/jokes/$id.comments.tsx"() {
     "use strict";
   }
 });
@@ -154,16 +154,20 @@ __export(root_exports, {
 var import_react2 = require("@remix-run/react");
 
 // app/styles/global-large.css
-var global_large_default = "/build/_assets/global-large-N4JBW4X2.css";
+var global_large_default = "/build/_assets/global-large-NMBC7QXE.css";
 
 // app/styles/global-medium.css
-var global_medium_default = "/build/_assets/global-medium-AMGOQIW7.css";
+var global_medium_default = "/build/_assets/global-medium-LTH6YFKS.css";
 
 // app/styles/global.css
-var global_default = "/build/_assets/global-MJ6OFPDA.css";
+var global_default = "/build/_assets/global-PTW6F3XD.css";
+
+// app/styles/tailwind.css
+var tailwind_default = "/build/_assets/tailwind-ZJ5MGX4E.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime2 = require("react/jsx-dev-runtime"), links = () => [
+  { rel: "stylesheet", href: tailwind_default },
   { rel: "stylesheet", href: global_default },
   {
     rel: "stylesheet",
@@ -181,125 +185,73 @@ function App() {
     /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("head", { children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("meta", { charSet: "utf-8" }, void 0, !1, {
         fileName: "app/root.tsx",
+        lineNumber: 28,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("meta", { name: "viewport", content: "width=device-width,initial-scale=1" }, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 29,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("title", { children: "Remix: So great, it's funny!" }, void 0, !1, {
+        fileName: "app/root.tsx",
         lineNumber: 30,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
-        "meta",
-        {
-          name: "viewport",
-          content: "width=device-width,initial-scale=1"
-        },
-        void 0,
-        !1,
-        {
-          fileName: "app/root.tsx",
-          lineNumber: 31,
-          columnNumber: 9
-        },
-        this
-      ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("title", { children: "Remix: So great, it's funny!" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Links, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 31,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/root.tsx",
+      lineNumber: 27,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("body", { children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Outlet, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 34,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.LiveReload, {}, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 35,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Links, {}, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Scripts, {}, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 36,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 29,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("body", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Outlet, {}, void 0, !1, {
-        fileName: "app/root.tsx",
-        lineNumber: 39,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.LiveReload, {}, void 0, !1, {
-        fileName: "app/root.tsx",
-        lineNumber: 40,
-        columnNumber: 9
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/root.tsx",
-      lineNumber: 38,
+      lineNumber: 33,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/root.tsx",
-    lineNumber: 28,
+    lineNumber: 26,
     columnNumber: 5
   }, this);
 }
 
-// server-entry-module:@remix-run/dev/server-build
-var route1 = __toESM(require_jokes_id_comments());
-
-// app/routes/jokes._index.tsx
-var jokes_index_exports = {};
-__export(jokes_index_exports, {
-  default: () => JokesIndexRoute,
+// app/routes/logout.tsx
+var logout_exports = {};
+__export(logout_exports, {
+  action: () => action,
   loader: () => loader
 });
-var import_node2 = require("@remix-run/node"), import_react3 = require("@remix-run/react");
+var import_node3 = require("@remix-run/node");
+
+// app/utils/session.server.ts
+var import_node2 = require("@remix-run/node"), import_bcryptjs = __toESM(require("bcryptjs"));
 
 // app/utils/db.server.ts
 var import_client = require("@prisma/client"), db;
 global.__db__ || (global.__db__ = new import_client.PrismaClient()), db = global.__db__, db.$connect();
 
-// app/routes/jokes._index.tsx
-var import_jsx_dev_runtime3 = require("react/jsx-dev-runtime"), loader = async () => {
-  let count = await db.joke.count(), randomRowNumber = Math.floor(Math.random() * count), [randomJoke] = await db.joke.findMany({
-    skip: randomRowNumber,
-    take: 1
-  });
-  return (0, import_node2.json)({ randomJoke });
-};
-function JokesIndexRoute() {
-  let data = (0, import_react3.useLoaderData)();
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { children: "Here's a random joke:" }, void 0, !1, {
-      fileName: "app/routes/jokes._index.tsx",
-      lineNumber: 21,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { children: data.randomJoke.content }, void 0, !1, {
-      fileName: "app/routes/jokes._index.tsx",
-      lineNumber: 22,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.Link, { to: data.randomJoke.id, children: [
-      '"',
-      data.randomJoke.name,
-      '" Permalink'
-    ] }, void 0, !0, {
-      fileName: "app/routes/jokes._index.tsx",
-      lineNumber: 23,
-      columnNumber: 7
-    }, this)
-  ] }, void 0, !0, {
-    fileName: "app/routes/jokes._index.tsx",
-    lineNumber: 20,
-    columnNumber: 5
-  }, this);
-}
-
-// app/routes/jokes.$id.tsx
-var jokes_id_exports = {};
-__export(jokes_id_exports, {
-  action: () => action,
-  default: () => jokes_id_default,
-  loader: () => loader4
-});
-var import_node4 = require("@remix-run/node"), import_react4 = require("@remix-run/react");
-
 // app/utils/session.server.ts
-var import_node3 = require("@remix-run/node"), import_bcryptjs = __toESM(require("bcryptjs"));
 async function register({
   password,
   username
@@ -324,7 +276,7 @@ async function login({
 var sessionSecret = process.env.SESSION_SECRET;
 if (!sessionSecret)
   throw new Error("SESSION_SECRET must be set");
-var storage = (0, import_node3.createCookieSessionStorage)({
+var storage = (0, import_node2.createCookieSessionStorage)({
   cookie: {
     name: "RJ_session",
     // normally you want this to be `secure: true`
@@ -351,7 +303,7 @@ async function requireUserId(request, redirectTo = new URL(request.url).pathname
     let searchParams = new URLSearchParams([
       ["redirectTo", redirectTo]
     ]);
-    throw (0, import_node3.redirect)(`/login?${searchParams}`);
+    throw (0, import_node2.redirect)(`/login?${searchParams}`);
   }
   return userId;
 }
@@ -369,7 +321,7 @@ async function getUser(request) {
 }
 async function logout(request) {
   let session = await getUserSession(request);
-  return (0, import_node3.redirect)("/login", {
+  return (0, import_node2.redirect)("/login", {
     headers: {
       "Set-Cookie": await storage.destroySession(session)
     }
@@ -377,12 +329,84 @@ async function logout(request) {
 }
 async function createUserSession(userId, redirectTo) {
   let session = await storage.getSession();
-  return session.set("userId", userId), (0, import_node3.redirect)(redirectTo, {
+  return session.set("userId", userId), (0, import_node2.redirect)(redirectTo, {
     headers: {
       "Set-Cookie": await storage.commitSession(session)
     }
   });
 }
+
+// app/routes/logout.tsx
+var action = async ({ request }) => logout(request), loader = async () => (0, import_node3.redirect)("/");
+
+// app/routes/index.tsx
+var routes_exports = {};
+__export(routes_exports, {
+  default: () => IndexRoute,
+  links: () => links2
+});
+var import_react3 = require("@remix-run/react");
+
+// app/styles/index.css
+var styles_default = "/build/_assets/index-FJ3PZEQB.css";
+
+// app/routes/index.tsx
+var import_jsx_dev_runtime3 = require("react/jsx-dev-runtime"), links2 = () => [
+  { rel: "stylesheet", href: styles_default }
+];
+function IndexRoute() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "content", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("h1", { children: [
+      "Remix ",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("span", { children: "Jokes!" }, void 0, !1, {
+        fileName: "app/routes/index.tsx",
+        lineNumber: 15,
+        columnNumber: 17
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/index.tsx",
+      lineNumber: 14,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("nav", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("ul", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react3.Link, { to: "jokes", children: "Read Jokes" }, void 0, !1, {
+      fileName: "app/routes/index.tsx",
+      lineNumber: 20,
+      columnNumber: 15
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/index.tsx",
+      lineNumber: 19,
+      columnNumber: 13
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/index.tsx",
+      lineNumber: 18,
+      columnNumber: 11
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/index.tsx",
+      lineNumber: 17,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/index.tsx",
+    lineNumber: 13,
+    columnNumber: 7
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/index.tsx",
+    lineNumber: 12,
+    columnNumber: 5
+  }, this);
+}
+
+// app/routes/jokes.tsx
+var jokes_exports = {};
+__export(jokes_exports, {
+  default: () => JokesRoute,
+  links: () => links3,
+  loader: () => loader4
+});
+var import_react4 = require("@remix-run/react");
+
+// app/styles/jokes.css
+var jokes_default = "/build/_assets/jokes-JQWM6NKN.css";
 
 // app/controllers/jokes/show.ts
 var loader2 = async ({ request, params }) => {
@@ -393,8 +417,8 @@ var loader2 = async ({ request, params }) => {
     throw new Error("Joke not found");
   let comments = await db.comment.findMany({
     orderBy: { createdAt: "desc" },
-    where: { jokeId: joke.id },
-    include: { jokester: !0 }
+    where: { jokeId: joke.id, parentId: null },
+    include: { jokester: !0, childComments: !0 }
   });
   return { joke, comments, userId, user };
 };
@@ -408,28 +432,44 @@ var loader3 = async ({ request }) => {
   return console.log(jokes), { jokes, user, userid };
 };
 
-// app/routes/jokes.$id.tsx
-var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime"), action = async ({ request, params }) => {
-  let userId = await requireUserId(request), form = await request.formData(), content = form.get("comment"), jokeId = params.id;
+// app/controllers/jokes/create.ts
+var import_node5 = require("@remix-run/node");
+
+// app/controllers/controller-hooks/ensure-user-present.ts
+var import_node4 = require("@remix-run/node");
+var ensureUserPresent = async ({ request }) => {
+  let userId = await requireUserId(request), user = await db.user.findFirst({ where: { id: userId } });
+  if (!user)
+    throw (0, import_node4.redirect)("/login");
+  return { user };
+};
+
+// app/controllers/jokes/create.ts
+var action2 = async ({ request, params }) => {
+  var _a;
+  let { user } = await ensureUserPresent({ request }), form = await request.formData(), content = (_a = form.get("comment")) == null ? void 0 : _a.toString(), parentId = form.get("parentId"), jokeId = params.id;
+  if (!jokeId)
+    throw (0, import_node5.redirect)("/jokes");
   if (form.has("delete-joke"))
-    return await db.joke.findFirst({
+    throw await db.joke.findFirst({
       where: {
         id: jokeId,
-        jokesterId: userId
+        jokesterId: user.id
       }
     }) && await db.joke.delete({
       where: {
         id: jokeId
       }
-    }), (0, import_node4.redirect)("/jokes");
+    }), (0, import_node5.redirect)("/jokes");
   if (form.has("delete-comment")) {
     let commentId = form.get("delete-comment");
     return await db.comment.delete({
       where: {
         id: commentId
       }
-    }), {};
-  } else if (form.has("edit-joke")) {
+    }), null;
+  }
+  if (form.has("edit-joke")) {
     let updatedContent = form.get("edit-joke");
     return await db.joke.update({
       where: {
@@ -438,37 +478,239 @@ var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime"), action = async (
       data: {
         content: updatedContent
       }
-    }), {};
-  } else if (content && content.length > 10) {
+    }), null;
+  }
+  if (content && content.length > 0) {
     let comment = await db.comment.create({
       data: {
         jokeId,
         content,
-        commenterId: userId
+        parentId,
+        commenterId: user.id
       }
     });
   }
-  return {};
-}, loader4 = loader2, JokeRoute = () => {
-  let { joke, comments, userId } = (0, import_react4.useLoaderData)();
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("p", { children: "Here's your hilarious joke:" }, void 0, !1, {
-      fileName: "app/routes/jokes.$id.tsx",
-      lineNumber: 67,
+  return null;
+};
+
+// app/routes/jokes.tsx
+var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime"), links3 = () => [
+  { rel: "stylesheet", href: tailwind_default },
+  { rel: "stylesheet", href: jokes_default }
+], loader4 = loader3;
+function JokesRoute() {
+  let { jokes, userid, user } = (0, import_react4.useLoaderData)(), navigate = (0, import_react4.useNavigate)();
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "jokes-layout", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("header", { className: "jokes-header", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "container", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("h1", { className: "home-link", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react4.Link, { to: "/", title: "Remix Jokes", "aria-label": "Remix Jokes", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("span", { className: "logo", children: "\u{1F92A}" }, void 0, !1, {
+          fileName: "app/routes/jokes.tsx",
+          lineNumber: 25,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("span", { className: "logo-medium", children: "J\u{1F92A}KES" }, void 0, !1, {
+          fileName: "app/routes/jokes.tsx",
+          lineNumber: 26,
+          columnNumber: 15
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/jokes.tsx",
+        lineNumber: 24,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/jokes.tsx",
+        lineNumber: 23,
+        columnNumber: 11
+      }, this),
+      user ? /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "user-info", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("span", { children: `Hi ${user.username}` }, void 0, !1, {
+          fileName: "app/routes/jokes.tsx",
+          lineNumber: 31,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("form", { action: "/logout", method: "post", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("button", { type: "submit", className: "button", children: "Logout" }, void 0, !1, {
+          fileName: "app/routes/jokes.tsx",
+          lineNumber: 33,
+          columnNumber: 17
+        }, this) }, void 0, !1, {
+          fileName: "app/routes/jokes.tsx",
+          lineNumber: 32,
+          columnNumber: 15
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/jokes.tsx",
+        lineNumber: 30,
+        columnNumber: 11
+      }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react4.Link, { to: "/login", children: "Login" }, void 0, !1, {
+        fileName: "app/routes/jokes.tsx",
+        lineNumber: 39,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/jokes.tsx",
+      lineNumber: 22,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/jokes.tsx",
+      lineNumber: 21,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("p", { children: joke.content }, void 0, !1, {
-      fileName: "app/routes/jokes.$id.tsx",
-      lineNumber: 68,
+    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("main", { className: "jokes-main", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "container", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "jokes-list", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react4.Link, { to: ".", children: "Get a random joke" }, void 0, !1, {
+          fileName: "app/routes/jokes.tsx",
+          lineNumber: 46,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("p", { children: "Here are a few more jokes to check out:" }, void 0, !1, {
+          fileName: "app/routes/jokes.tsx",
+          lineNumber: 47,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("ul", { children: jokes.map(
+          ({ id, name }) => /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react4.Link, { to: id, children: name }, void 0, !1, {
+            fileName: "app/routes/jokes.tsx",
+            lineNumber: 51,
+            columnNumber: 19
+          }, this) }, id, !1, {
+            fileName: "app/routes/jokes.tsx",
+            lineNumber: 50,
+            columnNumber: 15
+          }, this)
+        ) }, void 0, !1, {
+          fileName: "app/routes/jokes.tsx",
+          lineNumber: 48,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("p", { children: "All my jokes:" }, void 0, !1, {
+          fileName: "app/routes/jokes.tsx",
+          lineNumber: 55,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("ul", { children: jokes.map(
+          ({ id, jokesterId, name }) => userid === jokesterId && /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react4.Link, { to: id, children: name }, void 0, !1, {
+            fileName: "app/routes/jokes.tsx",
+            lineNumber: 61,
+            columnNumber: 23
+          }, this) }, id, !1, {
+            fileName: "app/routes/jokes.tsx",
+            lineNumber: 60,
+            columnNumber: 17
+          }, this)
+        ) }, void 0, !1, {
+          fileName: "app/routes/jokes.tsx",
+          lineNumber: 56,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react4.Link, { to: "new", className: "button", children: "Add your own" }, void 0, !1, {
+          fileName: "app/routes/jokes.tsx",
+          lineNumber: 66,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/jokes.tsx",
+        lineNumber: 45,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "jokes-outlet", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react4.Outlet, {}, void 0, !1, {
+        fileName: "app/routes/jokes.tsx",
+        lineNumber: 71,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/jokes.tsx",
+        lineNumber: 70,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/jokes.tsx",
+      lineNumber: 44,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/jokes.tsx",
+      lineNumber: 43,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/jokes.tsx",
+    lineNumber: 20,
+    columnNumber: 5
+  }, this);
+}
+
+// server-entry-module:@remix-run/dev/server-build
+var route4 = __toESM(require_id_comments());
+
+// app/routes/jokes/index.tsx
+var jokes_exports2 = {};
+__export(jokes_exports2, {
+  default: () => JokesIndexRoute,
+  loader: () => loader5
+});
+var import_node6 = require("@remix-run/node"), import_react5 = require("@remix-run/react");
+var import_jsx_dev_runtime5 = require("react/jsx-dev-runtime"), loader5 = async () => {
+  let count = await db.joke.count(), randomRowNumber = Math.floor(Math.random() * count), [randomJoke] = await db.joke.findMany({
+    skip: randomRowNumber,
+    take: 1
+  });
+  return (0, import_node6.json)({ randomJoke });
+};
+function JokesIndexRoute() {
+  let data = (0, import_react5.useLoaderData)();
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "Here's a random joke:" }, void 0, !1, {
+      fileName: "app/routes/jokes/index.tsx",
+      lineNumber: 21,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_react4.Link, { to: ".", children: joke.name }, void 0, !1, {
-      fileName: "app/routes/jokes.$id.tsx",
-      lineNumber: 70,
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: data.randomJoke.content }, void 0, !1, {
+      fileName: "app/routes/jokes/index.tsx",
+      lineNumber: 22,
       columnNumber: 7
     }, this),
-    userId === joke.jokesterId && /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "edit-and-delete-jokes", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("form", { method: "post", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_react5.Link, { to: data.randomJoke.id, children: [
+      '"',
+      data.randomJoke.name,
+      '" Permalink'
+    ] }, void 0, !0, {
+      fileName: "app/routes/jokes/index.tsx",
+      lineNumber: 23,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/jokes/index.tsx",
+    lineNumber: 20,
+    columnNumber: 5
+  }, this);
+}
+
+// app/routes/jokes/$id.tsx
+var id_exports = {};
+__export(id_exports, {
+  action: () => action3,
+  default: () => id_default,
+  loader: () => loader6
+});
+var import_react6 = require("@remix-run/react"), import_react7 = require("react");
+var import_jsx_dev_runtime6 = require("react/jsx-dev-runtime"), action3 = action2, loader6 = loader2, JokeRoute = () => {
+  let { joke, comments, userId } = (0, import_react6.useLoaderData)(), [parentId, setParentId] = (0, import_react7.useState)(""), [view, setView] = (0, import_react7.useState)(!1);
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { children: "Here's your hilarious joke:" }, void 0, !1, {
+      fileName: "app/routes/jokes/$id.tsx",
+      lineNumber: 14,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { children: joke.content }, void 0, !1, {
+      fileName: "app/routes/jokes/$id.tsx",
+      lineNumber: 15,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_react6.Link, { to: ".", children: joke.name }, void 0, !1, {
+      fileName: "app/routes/jokes/$id.tsx",
+      lineNumber: 17,
+      columnNumber: 7
+    }, this),
+    userId === joke.jokesterId && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "edit-and-delete-jokes", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("form", { method: "post", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
         "button",
         {
           type: "submit",
@@ -480,21 +722,45 @@ var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime"), action = async (
         void 0,
         !1,
         {
-          fileName: "app/routes/jokes.$id.tsx",
-          lineNumber: 75,
+          fileName: "app/routes/jokes/$id.tsx",
+          lineNumber: 22,
           columnNumber: 13
         },
         this
       ) }, void 0, !1, {
-        fileName: "app/routes/jokes.$id.tsx",
-        lineNumber: 74,
+        fileName: "app/routes/jokes/$id.tsx",
+        lineNumber: 21,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("form", { method: "post", className: "edit-joke", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("label", { children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+        "button",
+        {
+          onClick: () => setView(!view),
+          className: "bg-purple-600 rounded px-2 py-1 mt-4",
+          children: view ? /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { children: "close" }, void 0, !1, {
+            fileName: "app/routes/jokes/$id.tsx",
+            lineNumber: 36,
+            columnNumber: 47
+          }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { children: "edit post" }, void 0, !1, {
+            fileName: "app/routes/jokes/$id.tsx",
+            lineNumber: 36,
+            columnNumber: 22
+          }, this)
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/routes/jokes/$id.tsx",
+          lineNumber: 33,
+          columnNumber: 11
+        },
+        this
+      ),
+      view && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("form", { method: "post", className: "edit-joke", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("label", { children: [
           "Edit Joke:",
           " ",
-          /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
             "input",
             {
               name: "edit-joke",
@@ -504,152 +770,296 @@ var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime"), action = async (
             void 0,
             !1,
             {
-              fileName: "app/routes/jokes.$id.tsx",
-              lineNumber: 89,
-              columnNumber: 17
+              fileName: "app/routes/jokes/$id.tsx",
+              lineNumber: 44,
+              columnNumber: 19
             },
             this
           )
         ] }, void 0, !0, {
-          fileName: "app/routes/jokes.$id.tsx",
-          lineNumber: 87,
-          columnNumber: 15
+          fileName: "app/routes/jokes/$id.tsx",
+          lineNumber: 42,
+          columnNumber: 17
         }, this) }, void 0, !1, {
-          fileName: "app/routes/jokes.$id.tsx",
-          lineNumber: 86,
-          columnNumber: 13
+          fileName: "app/routes/jokes/$id.tsx",
+          lineNumber: 41,
+          columnNumber: 15
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("button", { type: "submit", className: "button", children: "update" }, void 0, !1, {
-          fileName: "app/routes/jokes.$id.tsx",
-          lineNumber: 96,
-          columnNumber: 13
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("button", { type: "submit", className: "button", children: "update" }, void 0, !1, {
+          fileName: "app/routes/jokes/$id.tsx",
+          lineNumber: 51,
+          columnNumber: 15
         }, this)
       ] }, void 0, !0, {
-        fileName: "app/routes/jokes.$id.tsx",
-        lineNumber: 85,
-        columnNumber: 11
+        fileName: "app/routes/jokes/$id.tsx",
+        lineNumber: 40,
+        columnNumber: 13
       }, this)
     ] }, void 0, !0, {
-      fileName: "app/routes/jokes.$id.tsx",
-      lineNumber: 73,
+      fileName: "app/routes/jokes/$id.tsx",
+      lineNumber: 20,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("form", { method: "post", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("label", { children: [
-        "Comment: ",
-        /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("input", { name: "comment", type: "text" }, void 0, !1, {
-          fileName: "app/routes/jokes.$id.tsx",
-          lineNumber: 107,
-          columnNumber: 22
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "bg-[#00000011] p-4 rounded-lg", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("form", { method: "post", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("label", { children: [
+          "Comment: ",
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("input", { name: "comment", type: "text" }, void 0, !1, {
+            fileName: "app/routes/jokes/$id.tsx",
+            lineNumber: 64,
+            columnNumber: 24
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/jokes/$id.tsx",
+          lineNumber: 63,
+          columnNumber: 13
+        }, this) }, void 0, !1, {
+          fileName: "app/routes/jokes/$id.tsx",
+          lineNumber: 62,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("button", { type: "submit", className: "button", children: "post" }, void 0, !1, {
+          fileName: "app/routes/jokes/$id.tsx",
+          lineNumber: 67,
+          columnNumber: 11
         }, this)
       ] }, void 0, !0, {
-        fileName: "app/routes/jokes.$id.tsx",
-        lineNumber: 106,
-        columnNumber: 11
-      }, this) }, void 0, !1, {
-        fileName: "app/routes/jokes.$id.tsx",
-        lineNumber: 105,
+        fileName: "app/routes/jokes/$id.tsx",
+        lineNumber: 61,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("button", { type: "submit", className: "button", children: "post" }, void 0, !1, {
-        fileName: "app/routes/jokes.$id.tsx",
-        lineNumber: 110,
-        columnNumber: 9
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/routes/jokes.$id.tsx",
-      lineNumber: 104,
-      columnNumber: 7
-    }, this),
-    comments.length !== 0 && /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(
-      "div",
-      {
-        className: "commentbox",
-        style: { overflowY: "scroll", maxHeight: "500px" },
-        children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("p", { children: "Comments" }, void 0, !1, {
-            fileName: "app/routes/jokes.$id.tsx",
-            lineNumber: 119,
-            columnNumber: 11
-          }, this),
-          comments.map(
-            (comment, index) => comment.content.length !== 0 && /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "comments", children: [
-              /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("span", { children: [
-                comment.jokester.username,
-                " "
-              ] }, void 0, !0, {
-                fileName: "app/routes/jokes.$id.tsx",
-                lineNumber: 124,
-                columnNumber: 19
-              }, this),
-              /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("p", { children: comment.content }, void 0, !1, {
-                fileName: "app/routes/jokes.$id.tsx",
-                lineNumber: 125,
-                columnNumber: 19
-              }, this),
-              /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "delete-comment-section", children: userId === comment.commenterId && /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("form", { method: "post", className: "comment-form", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(
-                "button",
+      comments.length !== 0 && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+        "div",
+        {
+          className: "commentbox ",
+          style: { overflowY: "scroll", maxHeight: "500px" },
+          children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { children: "Comments" }, void 0, !1, {
+              fileName: "app/routes/jokes/$id.tsx",
+              lineNumber: 76,
+              columnNumber: 13
+            }, this),
+            comments.map(
+              (comment, index) => comment.content.length !== 0 && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+                "div",
                 {
-                  type: "submit",
-                  className: "delete-button-comment",
-                  name: "delete-comment",
-                  value: comment.id,
-                  children: "delete"
+                  className: "comments border border-[#FFFFFF33]",
+                  children: [
+                    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { children: [
+                      comment.jokester.username,
+                      " "
+                    ] }, void 0, !0, {
+                      fileName: "app/routes/jokes/$id.tsx",
+                      lineNumber: 84,
+                      columnNumber: 21
+                    }, this),
+                    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { children: comment.content }, void 0, !1, {
+                      fileName: "app/routes/jokes/$id.tsx",
+                      lineNumber: 85,
+                      columnNumber: 21
+                    }, this),
+                    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "delete-comment-section ", children: [
+                      userId === comment.commenterId && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("form", { method: "post", className: "comment-form", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+                        "button",
+                        {
+                          type: "submit",
+                          className: "delete-button-comment",
+                          name: "delete-comment",
+                          value: comment.id,
+                          children: "delete"
+                        },
+                        void 0,
+                        !1,
+                        {
+                          fileName: "app/routes/jokes/$id.tsx",
+                          lineNumber: 90,
+                          columnNumber: 27
+                        },
+                        this
+                      ) }, void 0, !1, {
+                        fileName: "app/routes/jokes/$id.tsx",
+                        lineNumber: 89,
+                        columnNumber: 25
+                      }, this),
+                      comment.childComments && comment.childComments.map((reply) => /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+                        "div",
+                        {
+                          className: "bg-[#FFFFFF33] p-5 mt-2 rounded",
+                          children: [
+                            /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { children: reply.content }, void 0, !1, {
+                              fileName: "app/routes/jokes/$id.tsx",
+                              lineNumber: 105,
+                              columnNumber: 29
+                            }, this),
+                            /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("form", { method: "post", className: "comment-form", children: (reply.commenterId === userId || comment.commenterId === userId) && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+                              "button",
+                              {
+                                type: "submit",
+                                className: "delete-button-comment",
+                                name: "delete-comment",
+                                value: reply.id,
+                                children: "delete"
+                              },
+                              void 0,
+                              !1,
+                              {
+                                fileName: "app/routes/jokes/$id.tsx",
+                                lineNumber: 110,
+                                columnNumber: 33
+                              },
+                              this
+                            ) }, void 0, !1, {
+                              fileName: "app/routes/jokes/$id.tsx",
+                              lineNumber: 107,
+                              columnNumber: 29
+                            }, this)
+                          ]
+                        },
+                        reply.id,
+                        !0,
+                        {
+                          fileName: "app/routes/jokes/$id.tsx",
+                          lineNumber: 101,
+                          columnNumber: 27
+                        },
+                        this
+                      )),
+                      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "mt-2", children: parentId ? /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+                        "button",
+                        {
+                          className: "bg-red-600 px-2 py-1 rounded",
+                          type: "button",
+                          onClick: () => setParentId(""),
+                          children: "Cancel"
+                        },
+                        void 0,
+                        !1,
+                        {
+                          fileName: "app/routes/jokes/$id.tsx",
+                          lineNumber: 130,
+                          columnNumber: 27
+                        },
+                        this
+                      ) : /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+                        "button",
+                        {
+                          className: "bg-purple-600 px-2 py-1 rounded",
+                          type: "button",
+                          onClick: () => setParentId(comment.id),
+                          children: "Reply"
+                        },
+                        void 0,
+                        !1,
+                        {
+                          fileName: "app/routes/jokes/$id.tsx",
+                          lineNumber: 123,
+                          columnNumber: 27
+                        },
+                        this
+                      ) }, void 0, !1, {
+                        fileName: "app/routes/jokes/$id.tsx",
+                        lineNumber: 121,
+                        columnNumber: 23
+                      }, this)
+                    ] }, void 0, !0, {
+                      fileName: "app/routes/jokes/$id.tsx",
+                      lineNumber: 87,
+                      columnNumber: 21
+                    }, this),
+                    parentId === comment.id && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+                      "form",
+                      {
+                        method: "post",
+                        className: "mt-2 bg-slate-500 p-5 rounded ",
+                        children: [
+                          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("label", { children: [
+                            "Replying to ",
+                            comment.jokester.username,
+                            ":",
+                            " ",
+                            /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("input", { name: "comment", type: "text" }, void 0, !1, {
+                              fileName: "app/routes/jokes/$id.tsx",
+                              lineNumber: 146,
+                              columnNumber: 29
+                            }, this)
+                          ] }, void 0, !0, {
+                            fileName: "app/routes/jokes/$id.tsx",
+                            lineNumber: 144,
+                            columnNumber: 27
+                          }, this) }, void 0, !1, {
+                            fileName: "app/routes/jokes/$id.tsx",
+                            lineNumber: 143,
+                            columnNumber: 25
+                          }, this),
+                          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("input", { type: "hidden", name: "parentId", value: parentId }, void 0, !1, {
+                            fileName: "app/routes/jokes/$id.tsx",
+                            lineNumber: 149,
+                            columnNumber: 25
+                          }, this),
+                          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("button", { type: "submit", className: "button", children: "reply" }, void 0, !1, {
+                            fileName: "app/routes/jokes/$id.tsx",
+                            lineNumber: 150,
+                            columnNumber: 25
+                          }, this)
+                        ]
+                      },
+                      void 0,
+                      !0,
+                      {
+                        fileName: "app/routes/jokes/$id.tsx",
+                        lineNumber: 140,
+                        columnNumber: 23
+                      },
+                      this
+                    )
+                  ]
                 },
-                void 0,
-                !1,
+                index,
+                !0,
                 {
-                  fileName: "app/routes/jokes.$id.tsx",
-                  lineNumber: 129,
-                  columnNumber: 25
+                  fileName: "app/routes/jokes/$id.tsx",
+                  lineNumber: 81,
+                  columnNumber: 19
                 },
                 this
-              ) }, void 0, !1, {
-                fileName: "app/routes/jokes.$id.tsx",
-                lineNumber: 128,
-                columnNumber: 23
-              }, this) }, void 0, !1, {
-                fileName: "app/routes/jokes.$id.tsx",
-                lineNumber: 126,
-                columnNumber: 19
-              }, this)
-            ] }, index, !0, {
-              fileName: "app/routes/jokes.$id.tsx",
-              lineNumber: 123,
-              columnNumber: 17
-            }, this)
-          )
-        ]
-      },
-      void 0,
-      !0,
-      {
-        fileName: "app/routes/jokes.$id.tsx",
-        lineNumber: 116,
-        columnNumber: 9
-      },
-      this
-    )
+              )
+            )
+          ]
+        },
+        void 0,
+        !0,
+        {
+          fileName: "app/routes/jokes/$id.tsx",
+          lineNumber: 73,
+          columnNumber: 11
+        },
+        this
+      )
+    ] }, void 0, !0, {
+      fileName: "app/routes/jokes/$id.tsx",
+      lineNumber: 59,
+      columnNumber: 7
+    }, this)
   ] }, void 0, !0, {
-    fileName: "app/routes/jokes.$id.tsx",
-    lineNumber: 66,
+    fileName: "app/routes/jokes/$id.tsx",
+    lineNumber: 13,
     columnNumber: 5
   }, this);
-}, jokes_id_default = JokeRoute;
+}, id_default = JokeRoute;
 
-// app/routes/jokes.new.tsx
-var jokes_new_exports = {};
-__export(jokes_new_exports, {
-  action: () => action2,
+// app/routes/jokes/new.tsx
+var new_exports = {};
+__export(new_exports, {
+  action: () => action4,
   default: () => NewJokeRoute
 });
-var import_node6 = require("@remix-run/node"), import_react5 = require("@remix-run/react");
+var import_node8 = require("@remix-run/node"), import_react8 = require("@remix-run/react");
 
 // app/utils/request.server.ts
-var import_node5 = require("@remix-run/node"), badRequest = (data) => (0, import_node5.json)(data, { status: 400 });
+var import_node7 = require("@remix-run/node"), badRequest = (data) => (0, import_node7.json)(data, { status: 400 });
 
-// app/routes/jokes.new.tsx
-var import_jsx_dev_runtime5 = require("react/jsx-dev-runtime");
+// app/routes/jokes/new.tsx
+var import_jsx_dev_runtime7 = require("react/jsx-dev-runtime");
 function validateJokeContent(content) {
   if (content.length < 10)
     return "That joke is too short";
@@ -658,8 +1068,8 @@ function validateJokeName(name) {
   if (name.length < 3)
     return "That joke's name is too short";
 }
-var action2 = async ({ request }) => {
-  let userId = await requireUserId(request), form = await request.formData(), content = form.get("content"), name = form.get("name");
+var action4 = async ({ request }) => {
+  let { user } = await ensureUserPresent({ request }), form = await request.formData(), content = form.get("content"), name = form.get("name");
   if (typeof content != "string" || typeof name != "string")
     return badRequest({
       fieldErrors: null,
@@ -677,25 +1087,25 @@ var action2 = async ({ request }) => {
       formError: null
     });
   let joke = await db.joke.create({
-    data: { ...fields, jokesterId: userId }
+    data: { ...fields, jokesterId: user.id }
   });
-  return (0, import_node6.redirect)(`/jokes/${joke.id}`);
+  return (0, import_node8.redirect)(`/jokes/${joke.id}`);
 };
 function NewJokeRoute() {
   var _a, _b, _c, _d, _e, _f, _g, _h;
-  let actionData = (0, import_react5.useActionData)();
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "Add your own hilarious joke" }, void 0, !1, {
-      fileName: "app/routes/jokes.new.tsx",
-      lineNumber: 58,
+  let actionData = (0, import_react8.useActionData)();
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("p", { children: "Add your own hilarious joke" }, void 0, !1, {
+      fileName: "app/routes/jokes/new.tsx",
+      lineNumber: 62,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("form", { method: "post", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("label", { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("form", { method: "post", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("label", { children: [
           "Name:",
           " ",
-          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
+          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
             "input",
             {
               defaultValue: (_a = actionData == null ? void 0 : actionData.fields) == null ? void 0 : _a.name,
@@ -707,32 +1117,32 @@ function NewJokeRoute() {
             void 0,
             !1,
             {
-              fileName: "app/routes/jokes.new.tsx",
-              lineNumber: 63,
+              fileName: "app/routes/jokes/new.tsx",
+              lineNumber: 67,
               columnNumber: 13
             },
             this
           )
         ] }, void 0, !0, {
-          fileName: "app/routes/jokes.new.tsx",
-          lineNumber: 61,
+          fileName: "app/routes/jokes/new.tsx",
+          lineNumber: 65,
           columnNumber: 11
         }, this),
-        (_d = actionData == null ? void 0 : actionData.fieldErrors) != null && _d.name ? /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "form-validation-error", id: "name-error", role: "alert", children: actionData.fieldErrors.name }, void 0, !1, {
-          fileName: "app/routes/jokes.new.tsx",
-          lineNumber: 74,
+        (_d = actionData == null ? void 0 : actionData.fieldErrors) != null && _d.name ? /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("p", { className: "form-validation-error", id: "name-error", role: "alert", children: actionData.fieldErrors.name }, void 0, !1, {
+          fileName: "app/routes/jokes/new.tsx",
+          lineNumber: 78,
           columnNumber: 13
         }, this) : null
       ] }, void 0, !0, {
-        fileName: "app/routes/jokes.new.tsx",
-        lineNumber: 60,
+        fileName: "app/routes/jokes/new.tsx",
+        lineNumber: 64,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("label", { children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("label", { children: [
           "Content:",
           " ",
-          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
+          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
             "textarea",
             {
               defaultValue: (_e = actionData == null ? void 0 : actionData.fields) == null ? void 0 : _e.content,
@@ -743,18 +1153,18 @@ function NewJokeRoute() {
             void 0,
             !1,
             {
-              fileName: "app/routes/jokes.new.tsx",
-              lineNumber: 82,
+              fileName: "app/routes/jokes/new.tsx",
+              lineNumber: 86,
               columnNumber: 13
             },
             this
           )
         ] }, void 0, !0, {
-          fileName: "app/routes/jokes.new.tsx",
-          lineNumber: 80,
+          fileName: "app/routes/jokes/new.tsx",
+          lineNumber: 84,
           columnNumber: 11
         }, this),
-        (_h = actionData == null ? void 0 : actionData.fieldErrors) != null && _h.content ? /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
+        (_h = actionData == null ? void 0 : actionData.fieldErrors) != null && _h.content ? /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
           "p",
           {
             className: "form-validation-error",
@@ -765,262 +1175,41 @@ function NewJokeRoute() {
           void 0,
           !1,
           {
-            fileName: "app/routes/jokes.new.tsx",
-            lineNumber: 92,
+            fileName: "app/routes/jokes/new.tsx",
+            lineNumber: 96,
             columnNumber: 13
           },
           this
         ) : null
       ] }, void 0, !0, {
-        fileName: "app/routes/jokes.new.tsx",
-        lineNumber: 79,
+        fileName: "app/routes/jokes/new.tsx",
+        lineNumber: 83,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { children: [
-        actionData != null && actionData.formError ? /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "form-validation-error", role: "alert", children: actionData.formError }, void 0, !1, {
-          fileName: "app/routes/jokes.new.tsx",
-          lineNumber: 102,
+      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { children: [
+        actionData != null && actionData.formError ? /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("p", { className: "form-validation-error", role: "alert", children: actionData.formError }, void 0, !1, {
+          fileName: "app/routes/jokes/new.tsx",
+          lineNumber: 106,
           columnNumber: 13
         }, this) : null,
-        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("button", { type: "submit", className: "button", children: "Add" }, void 0, !1, {
-          fileName: "app/routes/jokes.new.tsx",
-          lineNumber: 106,
+        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("button", { type: "submit", className: "button", children: "Add" }, void 0, !1, {
+          fileName: "app/routes/jokes/new.tsx",
+          lineNumber: 110,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
-        fileName: "app/routes/jokes.new.tsx",
-        lineNumber: 100,
+        fileName: "app/routes/jokes/new.tsx",
+        lineNumber: 104,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
-      fileName: "app/routes/jokes.new.tsx",
-      lineNumber: 59,
+      fileName: "app/routes/jokes/new.tsx",
+      lineNumber: 63,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
-    fileName: "app/routes/jokes.new.tsx",
-    lineNumber: 57,
-    columnNumber: 5
-  }, this);
-}
-
-// app/routes/logout.tsx
-var logout_exports = {};
-__export(logout_exports, {
-  action: () => action3,
-  loader: () => loader5
-});
-var import_node7 = require("@remix-run/node");
-var action3 = async ({ request }) => logout(request), loader5 = async () => (0, import_node7.redirect)("/");
-
-// app/routes/_index.tsx
-var index_exports = {};
-__export(index_exports, {
-  default: () => IndexRoute,
-  links: () => links2
-});
-var import_react6 = require("@remix-run/react");
-
-// app/styles/index.css
-var styles_default = "/build/_assets/index-N5UQ7QMB.css";
-
-// app/routes/_index.tsx
-var import_jsx_dev_runtime6 = require("react/jsx-dev-runtime"), links2 = () => [
-  { rel: "stylesheet", href: styles_default }
-];
-function IndexRoute() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "content", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("h1", { children: [
-      "Remix ",
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { children: "Jokes!" }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 15,
-        columnNumber: 17
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 14,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("nav", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("ul", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_react6.Link, { to: "jokes", children: "Read Jokes" }, void 0, !1, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 20,
-      columnNumber: 15
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 19,
-      columnNumber: 13
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 18,
-      columnNumber: 11
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 17,
-      columnNumber: 9
-    }, this)
-  ] }, void 0, !0, {
-    fileName: "app/routes/_index.tsx",
-    lineNumber: 13,
-    columnNumber: 7
-  }, this) }, void 0, !1, {
-    fileName: "app/routes/_index.tsx",
-    lineNumber: 12,
-    columnNumber: 5
-  }, this);
-}
-
-// app/routes/jokes.tsx
-var jokes_exports = {};
-__export(jokes_exports, {
-  default: () => JokesRoute,
-  links: () => links3,
-  loader: () => loader6
-});
-var import_react7 = require("@remix-run/react");
-
-// app/styles/jokes.css
-var jokes_default = "/build/_assets/jokes-VCF74LOY.css";
-
-// app/routes/jokes.tsx
-var import_jsx_dev_runtime7 = require("react/jsx-dev-runtime"), links3 = () => [
-  { rel: "stylesheet", href: jokes_default }
-], loader6 = loader3;
-function JokesRoute() {
-  let { jokes, userid, user } = (0, import_react7.useLoaderData)(), navigate = (0, import_react7.useNavigate)();
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "jokes-layout", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("header", { className: "jokes-header", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "container", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("h1", { className: "home-link", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react7.Link, { to: "/", title: "Remix Jokes", "aria-label": "Remix Jokes", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("span", { className: "logo", children: "\u{1F92A}" }, void 0, !1, {
-          fileName: "app/routes/jokes.tsx",
-          lineNumber: 23,
-          columnNumber: 15
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("span", { className: "logo-medium", children: "J\u{1F92A}KES" }, void 0, !1, {
-          fileName: "app/routes/jokes.tsx",
-          lineNumber: 24,
-          columnNumber: 15
-        }, this)
-      ] }, void 0, !0, {
-        fileName: "app/routes/jokes.tsx",
-        lineNumber: 22,
-        columnNumber: 13
-      }, this) }, void 0, !1, {
-        fileName: "app/routes/jokes.tsx",
-        lineNumber: 21,
-        columnNumber: 11
-      }, this),
-      user ? /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "user-info", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("span", { children: `Hi ${user.username}` }, void 0, !1, {
-          fileName: "app/routes/jokes.tsx",
-          lineNumber: 29,
-          columnNumber: 15
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("form", { action: "/logout", method: "post", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("button", { type: "submit", className: "button", children: "Logout" }, void 0, !1, {
-          fileName: "app/routes/jokes.tsx",
-          lineNumber: 31,
-          columnNumber: 17
-        }, this) }, void 0, !1, {
-          fileName: "app/routes/jokes.tsx",
-          lineNumber: 30,
-          columnNumber: 15
-        }, this)
-      ] }, void 0, !0, {
-        fileName: "app/routes/jokes.tsx",
-        lineNumber: 28,
-        columnNumber: 11
-      }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react7.Link, { to: "/login", children: "Login" }, void 0, !1, {
-        fileName: "app/routes/jokes.tsx",
-        lineNumber: 37,
-        columnNumber: 11
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/routes/jokes.tsx",
-      lineNumber: 20,
-      columnNumber: 9
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/jokes.tsx",
-      lineNumber: 19,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("main", { className: "jokes-main", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "container", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "jokes-list", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react7.Link, { to: ".", children: "Get a random joke" }, void 0, !1, {
-          fileName: "app/routes/jokes.tsx",
-          lineNumber: 44,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("p", { children: "Here are a few more jokes to check out:" }, void 0, !1, {
-          fileName: "app/routes/jokes.tsx",
-          lineNumber: 45,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("ul", { children: jokes.map(
-          ({ id, name }) => /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react7.Link, { to: id, children: name }, void 0, !1, {
-            fileName: "app/routes/jokes.tsx",
-            lineNumber: 49,
-            columnNumber: 19
-          }, this) }, id, !1, {
-            fileName: "app/routes/jokes.tsx",
-            lineNumber: 48,
-            columnNumber: 15
-          }, this)
-        ) }, void 0, !1, {
-          fileName: "app/routes/jokes.tsx",
-          lineNumber: 46,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("p", { children: "All my jokes:" }, void 0, !1, {
-          fileName: "app/routes/jokes.tsx",
-          lineNumber: 53,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("ul", { children: jokes.map(
-          ({ id, jokesterId, name }) => userid === jokesterId && /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("button", { onClick: () => navigate(id), children: name }, void 0, !1, {
-            fileName: "app/routes/jokes.tsx",
-            lineNumber: 59,
-            columnNumber: 23
-          }, this) }, id, !1, {
-            fileName: "app/routes/jokes.tsx",
-            lineNumber: 58,
-            columnNumber: 17
-          }, this)
-        ) }, void 0, !1, {
-          fileName: "app/routes/jokes.tsx",
-          lineNumber: 54,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react7.Link, { to: "new", className: "button", children: "Add your own" }, void 0, !1, {
-          fileName: "app/routes/jokes.tsx",
-          lineNumber: 64,
-          columnNumber: 13
-        }, this)
-      ] }, void 0, !0, {
-        fileName: "app/routes/jokes.tsx",
-        lineNumber: 43,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "jokes-outlet", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react7.Outlet, {}, void 0, !1, {
-        fileName: "app/routes/jokes.tsx",
-        lineNumber: 69,
-        columnNumber: 13
-      }, this) }, void 0, !1, {
-        fileName: "app/routes/jokes.tsx",
-        lineNumber: 68,
-        columnNumber: 11
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/routes/jokes.tsx",
-      lineNumber: 42,
-      columnNumber: 9
-    }, this) }, void 0, !1, {
-      fileName: "app/routes/jokes.tsx",
-      lineNumber: 41,
-      columnNumber: 7
-    }, this)
-  ] }, void 0, !0, {
-    fileName: "app/routes/jokes.tsx",
-    lineNumber: 18,
+    fileName: "app/routes/jokes/new.tsx",
+    lineNumber: 61,
     columnNumber: 5
   }, this);
 }
@@ -1028,19 +1217,16 @@ function JokesRoute() {
 // app/routes/login.tsx
 var login_exports = {};
 __export(login_exports, {
-  action: () => action4,
+  action: () => action6,
   default: () => Login,
   links: () => links4
 });
-var import_react8 = require("@remix-run/react");
+var import_react9 = require("@remix-run/react");
 
 // app/styles/login.css
-var login_default = "/build/_assets/login-MPWT2RCD.css";
+var login_default = "/build/_assets/login-TMP76G53.css";
 
-// app/routes/login.tsx
-var import_jsx_dev_runtime8 = require("react/jsx-dev-runtime"), links4 = () => [
-  { rel: "stylesheet", href: login_default }
-];
+// app/controllers/login/create.ts
 function validateUsername(username) {
   if (username.length < 3)
     return "Usernames must be at least 3 characters long";
@@ -1052,10 +1238,8 @@ function validatePassword(password) {
 function validateUrl(url) {
   return ["/jokes", "/", "https://remix.run"].includes(url) ? url : "/jokes";
 }
-var action4 = async ({ request }) => {
-  let form = await request.formData(), loginType = form.get("loginType"), password = form.get("password"), username = form.get("username"), redirectTo = validateUrl(
-    form.get("redirectTo") || "/jokes"
-  );
+var action5 = async ({ request }) => {
+  let form = await request.formData(), loginType = form.get("loginType"), password = form.get("password"), username = form.get("username"), redirectTo = validateUrl(form.get("redirectTo") || "/jokes");
   if (typeof loginType != "string" || typeof password != "string" || typeof username != "string")
     return badRequest({
       fieldErrors: null,
@@ -1105,14 +1289,19 @@ var action4 = async ({ request }) => {
       });
   }
 };
+
+// app/routes/login.tsx
+var import_jsx_dev_runtime8 = require("react/jsx-dev-runtime"), links4 = () => [
+  { rel: "stylesheet", href: login_default }
+], action6 = action5;
 function Login() {
   var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k;
-  let actionData = (0, import_react8.useActionData)(), [searchParams] = (0, import_react8.useSearchParams)();
+  let actionData = (0, import_react9.useActionData)(), [searchParams] = (0, import_react9.useSearchParams)();
   return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "container", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "content", "data-light": "", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("h1", { children: "Login" }, void 0, !1, {
         fileName: "app/routes/login.tsx",
-        lineNumber: 129,
+        lineNumber: 18,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("form", { method: "post", children: [
@@ -1127,7 +1316,7 @@ function Login() {
           !1,
           {
             fileName: "app/routes/login.tsx",
-            lineNumber: 131,
+            lineNumber: 20,
             columnNumber: 11
           },
           this
@@ -1135,7 +1324,7 @@ function Login() {
         /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("fieldset", { children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("legend", { className: "sr-only", children: "Login or Register?" }, void 0, !1, {
             fileName: "app/routes/login.tsx",
-            lineNumber: 139,
+            lineNumber: 26,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("label", { children: [
@@ -1151,7 +1340,7 @@ function Login() {
               !1,
               {
                 fileName: "app/routes/login.tsx",
-                lineNumber: 143,
+                lineNumber: 28,
                 columnNumber: 15
               },
               this
@@ -1160,7 +1349,7 @@ function Login() {
             "Login"
           ] }, void 0, !0, {
             fileName: "app/routes/login.tsx",
-            lineNumber: 142,
+            lineNumber: 27,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("label", { children: [
@@ -1176,7 +1365,7 @@ function Login() {
               !1,
               {
                 fileName: "app/routes/login.tsx",
-                lineNumber: 155,
+                lineNumber: 40,
                 columnNumber: 15
               },
               this
@@ -1185,18 +1374,18 @@ function Login() {
             "Register"
           ] }, void 0, !0, {
             fileName: "app/routes/login.tsx",
-            lineNumber: 154,
+            lineNumber: 39,
             columnNumber: 13
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/login.tsx",
-          lineNumber: 138,
+          lineNumber: 25,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("label", { htmlFor: "username-input", children: "Username" }, void 0, !1, {
             fileName: "app/routes/login.tsx",
-            lineNumber: 168,
+            lineNumber: 50,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
@@ -1206,16 +1395,14 @@ function Login() {
               id: "username-input",
               name: "username",
               defaultValue: (_d = actionData == null ? void 0 : actionData.fields) == null ? void 0 : _d.username,
-              "aria-invalid": Boolean(
-                (_e = actionData == null ? void 0 : actionData.fieldErrors) == null ? void 0 : _e.username
-              ),
+              "aria-invalid": Boolean((_e = actionData == null ? void 0 : actionData.fieldErrors) == null ? void 0 : _e.username),
               "aria-errormessage": (_f = actionData == null ? void 0 : actionData.fieldErrors) != null && _f.username ? "username-error" : void 0
             },
             void 0,
             !1,
             {
               fileName: "app/routes/login.tsx",
-              lineNumber: 169,
+              lineNumber: 51,
               columnNumber: 13
             },
             this
@@ -1232,20 +1419,20 @@ function Login() {
             !1,
             {
               fileName: "app/routes/login.tsx",
-              lineNumber: 184,
+              lineNumber: 62,
               columnNumber: 13
             },
             this
           ) : null
         ] }, void 0, !0, {
           fileName: "app/routes/login.tsx",
-          lineNumber: 167,
+          lineNumber: 49,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("label", { htmlFor: "password-input", children: "Password" }, void 0, !1, {
             fileName: "app/routes/login.tsx",
-            lineNumber: 194,
+            lineNumber: 71,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
@@ -1255,16 +1442,14 @@ function Login() {
               name: "password",
               type: "password",
               defaultValue: (_h = actionData == null ? void 0 : actionData.fields) == null ? void 0 : _h.password,
-              "aria-invalid": Boolean(
-                (_i = actionData == null ? void 0 : actionData.fieldErrors) == null ? void 0 : _i.password
-              ),
+              "aria-invalid": Boolean((_i = actionData == null ? void 0 : actionData.fieldErrors) == null ? void 0 : _i.password),
               "aria-errormessage": (_j = actionData == null ? void 0 : actionData.fieldErrors) != null && _j.password ? "password-error" : void 0
             },
             void 0,
             !1,
             {
               fileName: "app/routes/login.tsx",
-              lineNumber: 195,
+              lineNumber: 72,
               columnNumber: 13
             },
             this
@@ -1281,91 +1466,80 @@ function Login() {
             !1,
             {
               fileName: "app/routes/login.tsx",
-              lineNumber: 210,
+              lineNumber: 83,
               columnNumber: 13
             },
             this
           ) : null
         ] }, void 0, !0, {
           fileName: "app/routes/login.tsx",
-          lineNumber: 193,
+          lineNumber: 70,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { id: "form-error-message", children: actionData != null && actionData.formError ? /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
-          "p",
-          {
-            className: "form-validation-error",
-            role: "alert",
-            children: actionData.formError
-          },
-          void 0,
-          !1,
-          {
-            fileName: "app/routes/login.tsx",
-            lineNumber: 221,
-            columnNumber: 13
-          },
-          this
-        ) : null }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { id: "form-error-message", children: actionData != null && actionData.formError ? /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { className: "form-validation-error", role: "alert", children: actionData.formError }, void 0, !1, {
           fileName: "app/routes/login.tsx",
-          lineNumber: 219,
+          lineNumber: 93,
+          columnNumber: 13
+        }, this) : null }, void 0, !1, {
+          fileName: "app/routes/login.tsx",
+          lineNumber: 91,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("button", { type: "submit", className: "button", children: "Submit" }, void 0, !1, {
           fileName: "app/routes/login.tsx",
-          lineNumber: 229,
+          lineNumber: 98,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/login.tsx",
-        lineNumber: 130,
+        lineNumber: 19,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/login.tsx",
-      lineNumber: 128,
+      lineNumber: 17,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "links", children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("ul", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react8.Link, { to: "/", children: "Home" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react9.Link, { to: "/", children: "Home" }, void 0, !1, {
         fileName: "app/routes/login.tsx",
-        lineNumber: 237,
+        lineNumber: 106,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/login.tsx",
-        lineNumber: 236,
+        lineNumber: 105,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react8.Link, { to: "/jokes", children: "Jokes" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react9.Link, { to: "/jokes", children: "Jokes" }, void 0, !1, {
         fileName: "app/routes/login.tsx",
-        lineNumber: 240,
+        lineNumber: 109,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/login.tsx",
-        lineNumber: 239,
+        lineNumber: 108,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/login.tsx",
-      lineNumber: 235,
+      lineNumber: 104,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/login.tsx",
-      lineNumber: 234,
+      lineNumber: 103,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/login.tsx",
-    lineNumber: 127,
+    lineNumber: 16,
     columnNumber: 5
   }, this);
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-F7CQNWBK.js", imports: ["/build/_shared/chunk-CG2CFRD5.js", "/build/_shared/chunk-IU43IUTG.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-TVNO4G46.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-ZXG5JSIA.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/jokes": { id: "routes/jokes", parentId: "root", path: "jokes", index: void 0, caseSensitive: void 0, module: "/build/routes/jokes-6FC6CMJE.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/jokes.$id": { id: "routes/jokes.$id", parentId: "routes/jokes", path: ":id", index: void 0, caseSensitive: void 0, module: "/build/routes/jokes.$id-X5Y3HIQX.js", imports: ["/build/_shared/chunk-VZDKPZ6L.js", "/build/_shared/chunk-3K2JK6MY.js", "/build/_shared/chunk-YVOXMMMI.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/jokes.$id.comments": { id: "routes/jokes.$id.comments", parentId: "routes/jokes.$id", path: "comments", index: void 0, caseSensitive: void 0, module: "/build/routes/jokes.$id.comments-YV27IO7B.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/jokes._index": { id: "routes/jokes._index", parentId: "routes/jokes", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/jokes._index-YCQ7QIC7.js", imports: ["/build/_shared/chunk-3K2JK6MY.js", "/build/_shared/chunk-YVOXMMMI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/jokes.new": { id: "routes/jokes.new", parentId: "routes/jokes", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/jokes.new-CIK7AICC.js", imports: ["/build/_shared/chunk-3EIXUVHC.js", "/build/_shared/chunk-VZDKPZ6L.js", "/build/_shared/chunk-3K2JK6MY.js", "/build/_shared/chunk-YVOXMMMI.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-D66GAOE6.js", imports: ["/build/_shared/chunk-3EIXUVHC.js", "/build/_shared/chunk-VZDKPZ6L.js", "/build/_shared/chunk-YVOXMMMI.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-S5LWYBEX.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "0f89eb2e", hmr: void 0, url: "/build/manifest-0F89EB2E.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-FQCOPC2Z.js", imports: ["/build/_shared/chunk-BKXBFHRI.js", "/build/_shared/chunk-IU43IUTG.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-BGUAFNT5.js", imports: ["/build/_shared/chunk-SZCBWS73.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-5CVUZ5HL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/jokes": { id: "routes/jokes", parentId: "root", path: "jokes", index: void 0, caseSensitive: void 0, module: "/build/routes/jokes-GQLMMEMX.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/jokes/$id": { id: "routes/jokes/$id", parentId: "routes/jokes", path: ":id", index: void 0, caseSensitive: void 0, module: "/build/routes/jokes/$id-M77CTVRT.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/jokes/$id.comments": { id: "routes/jokes/$id.comments", parentId: "routes/jokes", path: ":id/comments", index: void 0, caseSensitive: void 0, module: "/build/routes/jokes/$id.comments-UWLLTKXG.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/jokes/index": { id: "routes/jokes/index", parentId: "routes/jokes", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/jokes/index-QWLFPM5Q.js", imports: ["/build/_shared/chunk-JVK6RETX.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/jokes/new": { id: "routes/jokes/new", parentId: "routes/jokes", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/jokes/new-53JVD2Y2.js", imports: ["/build/_shared/chunk-JVK6RETX.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-CVPHZJBY.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-7HDFWKM6.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "267c0a72", hmr: void 0, url: "/build/manifest-267C0A72.js" };
 
 // server-entry-module:@remix-run/dev/server-build
-var assetsBuildDirectory = "public\\build", future = { v2_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
+var assetsBuildDirectory = "public/build", future = { v2_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !1, v2_headers: !1, v2_meta: !1, v2_normalizeFormMethod: !1, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
   root: {
     id: "root",
     parentId: void 0,
@@ -1373,38 +1547,6 @@ var assetsBuildDirectory = "public\\build", future = { v2_dev: !1, unstable_post
     index: void 0,
     caseSensitive: void 0,
     module: root_exports
-  },
-  "routes/jokes.$id.comments": {
-    id: "routes/jokes.$id.comments",
-    parentId: "routes/jokes.$id",
-    path: "comments",
-    index: void 0,
-    caseSensitive: void 0,
-    module: route1
-  },
-  "routes/jokes._index": {
-    id: "routes/jokes._index",
-    parentId: "routes/jokes",
-    path: void 0,
-    index: !0,
-    caseSensitive: void 0,
-    module: jokes_index_exports
-  },
-  "routes/jokes.$id": {
-    id: "routes/jokes.$id",
-    parentId: "routes/jokes",
-    path: ":id",
-    index: void 0,
-    caseSensitive: void 0,
-    module: jokes_id_exports
-  },
-  "routes/jokes.new": {
-    id: "routes/jokes.new",
-    parentId: "routes/jokes",
-    path: "new",
-    index: void 0,
-    caseSensitive: void 0,
-    module: jokes_new_exports
   },
   "routes/logout": {
     id: "routes/logout",
@@ -1414,13 +1556,13 @@ var assetsBuildDirectory = "public\\build", future = { v2_dev: !1, unstable_post
     caseSensitive: void 0,
     module: logout_exports
   },
-  "routes/_index": {
-    id: "routes/_index",
+  "routes/index": {
+    id: "routes/index",
     parentId: "root",
     path: void 0,
     index: !0,
     caseSensitive: void 0,
-    module: index_exports
+    module: routes_exports
   },
   "routes/jokes": {
     id: "routes/jokes",
@@ -1429,6 +1571,38 @@ var assetsBuildDirectory = "public\\build", future = { v2_dev: !1, unstable_post
     index: void 0,
     caseSensitive: void 0,
     module: jokes_exports
+  },
+  "routes/jokes/$id.comments": {
+    id: "routes/jokes/$id.comments",
+    parentId: "routes/jokes",
+    path: ":id/comments",
+    index: void 0,
+    caseSensitive: void 0,
+    module: route4
+  },
+  "routes/jokes/index": {
+    id: "routes/jokes/index",
+    parentId: "routes/jokes",
+    path: void 0,
+    index: !0,
+    caseSensitive: void 0,
+    module: jokes_exports2
+  },
+  "routes/jokes/$id": {
+    id: "routes/jokes/$id",
+    parentId: "routes/jokes",
+    path: ":id",
+    index: void 0,
+    caseSensitive: void 0,
+    module: id_exports
+  },
+  "routes/jokes/new": {
+    id: "routes/jokes/new",
+    parentId: "routes/jokes",
+    path: "new",
+    index: void 0,
+    caseSensitive: void 0,
+    module: new_exports
   },
   "routes/login": {
     id: "routes/login",

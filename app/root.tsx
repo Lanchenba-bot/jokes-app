@@ -1,15 +1,13 @@
-import type { LinksFunction } from "@remix-run/node";
-import {
-  Links,
-  LiveReload,
-  Outlet,
-} from "@remix-run/react";
+import type { LinksFunction } from "@remix-run/node"
+import { Links, LiveReload, Outlet, Scripts } from "@remix-run/react"
 
-import globalLargeStylesUrl from "~/styles/global-large.css";
-import globalMediumStylesUrl from "~/styles/global-medium.css";
-import globalStylesUrl from "~/styles/global.css";
+import globalLargeStylesUrl from "~/styles/global-large.css"
+import globalMediumStylesUrl from "~/styles/global-medium.css"
+import globalStylesUrl from "~/styles/global.css"
+import stylesheet from "~/styles/tailwind.css"
 
 export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: stylesheet },
   { rel: "stylesheet", href: globalStylesUrl },
   {
     rel: "stylesheet",
@@ -21,24 +19,22 @@ export const links: LinksFunction = () => [
     href: globalLargeStylesUrl,
     media: "screen and (min-width: 1024px)",
   },
-];
+]
 
 export default function App() {
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width,initial-scale=1"
-        />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>Remix: So great, it's funny!</title>
         <Links />
       </head>
       <body>
         <Outlet />
         <LiveReload />
+        <Scripts />
       </body>
     </html>
-  );
+  )
 }

@@ -14,8 +14,8 @@ export const loader = async ({ request, params }: LoaderArgs) => {
   }
   const comments = await db.comment.findMany({
     orderBy: { createdAt: "desc" },
-    where: { jokeId: joke.id },
-    include: { jokester: true },
+    where: { jokeId: joke.id, parentId: null },
+    include: { jokester: true, childComments: true },
   })
   return { joke, comments, userId, user }
 }
